@@ -38,21 +38,17 @@ $ vagrant plugin install vagrant-digitalocean-0.7.0.gem
 
 ## Usage
 
-To just boot `core1`,
+Decide how many cluste do you up:
 
 ```bash
-$ vagrant up core1 --provider=digital_ocean
+$ export NUM_INSTANCES=3
 ```
 
-You can get 1 coreOS machine in DigitalOcean.
-
-To create 3 machine cluster,
+And up it,
 
 ```bash
-$ vagrant up core2 core3 --provider=digital_ocean
+$ vagrant up --provider=digital_ocean
 ```
-
-`core2` and `core3` is automatically join `core1`'s cluster.
 
 ## Author
 
